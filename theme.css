@@ -1,0 +1,292 @@
+/* // page1  */
+
+@font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
+  
+  body {
+    background-color: black;
+    background-image: url("woman2.jpg");
+    background-repeat: no-repeat;
+    background-size: width px;
+    background-position: right;
+    
+  }
+  
+  .sign {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #6b1839,
+      transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 6em;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+  
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    28%,
+    33% {
+      color: #ff65bd;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #ff2483;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker,
+  #location {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+
+  #result {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+  }
+
+
+.btn-counter { margin-right: 3px; }
+.btn-counter:after,
+.btn-counter:hover:after { text-shadow: none; }
+.btn-counter:after {
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+  background-color: #eee;
+  padding: 0 ;
+  color: #777;
+  content: attr(data-count);
+  right: 100%;
+  margin-left: 8px;
+  margin-right: -13px;
+  position: absolute;
+  bottom: -1px;
+}
+.btn-counter:before {
+  transform: rotate(45deg);
+
+  background-color: #eee;
+  border: 1px solid #d3d3d3;
+  border-right: 0;
+  border-top: 0;
+  content: '';
+  position: absolute;
+  right: -113px;
+  bottom: 5px;
+  height: 6px;
+  width: 6px;
+  z-index: 1;
+  zoom: 1;
+}
+#p1{color:pink;
+padding-top: 612px;
+padding-left: 1020px;}
+
+#para,
+#heading1 {
+color: #ffe6ff;
+text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+-0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+font-size: xx-large;
+padding-top: 40px;
+padding-right: 30px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading1,
+#freeze {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+    font-size: 70px;
+    margin-left: 470px;
+}
+
+
+#heading1 {
+margin: center;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding: 0;
+}
+
+#question {
+color: #ffe6ff;
+text-shadow: 0 0 0.6rem #cbbce6, 0 0 1.5rem #c765ff,
+-0.2rem 0.1rem 1rem #db65ff, 0.2rem 0.1rem 1rem #d365ff,
+0 -0.5rem 2rem #a724ff, 0 0.5rem 3rem #9c24ff;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+}
+
+#location,
+#result {
+font-family: Clip;
+src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+color: #ffe6ff;
+text-shadow: 0 0 0.6rem #cbbce6, 0 0 1.5rem #c765ff,
+-0.2rem 0.1rem 1rem #db65ff, 0.2rem 0.1rem 1rem #d365ff,
+0 -0.5rem 2rem #a724ff, 0 0.5rem 3rem #9c24ff;
+font-size: xx-large;
+margin: 0px;
+padding: 0px;
+margin-left: 500px;
+}
+
+#freeze {
+color: #ffe6ff;
+text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+-0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+font-size: x-large;
+}
+
+.start {
+    margin: 0;
+    padding: 0;
+    background: #00041d;
+}
+
+.start {
+    position: absolute;
+    top: 81%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 40px;
+    background: #00072f ;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40px;
+    color: #555;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 6px;
+    transition: 5s;
+    overflow: hidden;
+    
+}
+
+#freeze {
+    top: 81%;
+    left: 48%;
+    height: 40px;
+    background: #4a0964 ;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40px;
+    color: rgb(85, 53, 112);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: 3s;
+    overflow: hidden;
+
+}
+
+.start:hover {
+    color: #fff;
+    box-shadow: -15px 0 50px rgba(255, 20, 152, 1), 15px 0 50px rgba(122, 0, 255, 1);
+    text-shadow: 0 0 10px rgba(255,255,255,0.50), 0 0 25px rgba(255,255,255,0.50), 
+    0 0 35px rgba(255,255,255,0.50);
+}
+
+#freeze:hover {
+    color: #fff;
+    box-shadow: -15px 0 50px rgba(255, 20, 152, 1), 15px 0 50px rgba(122, 0, 255, 1);
+    text-shadow: 0 0 10px rgba(255,255,255,0.50), 0 0 25px rgba(255,255,255,0.50), 
+    0 0 35px rgba(255,255,255,0.50);
+}
+.start:before,
+#freeze:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 20, 152, 0);
+    filter: blur(4px);
+    transition: 5s;
+    z-index: -1;
+
+}
+
+.start:hover:before,
+#freeze:hover:before{
+    
+    background: rgba(255, 20, 152, 1);
+    transform: scaleX(5);
+}
+
+
+.start:after,
+#freeze:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(122, 0, 255, 0);
+    filter: blur(4px);
+    transition: 5s;
+    z-index: -1;
+    mix-blend-mode: lighten;
+
+}
+
+.start:hover:after
+#freeze:hover:after{
+    
+    background: rgba(122, 0, 255, 1);
+    transform: scaleX(5);
+}
